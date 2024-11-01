@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>القران الكريم</title>
+
+  <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+
+<body>
+  <header id="head">
+    <nav class="main-navigation">
+      <div class="bar">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+        <li><a href="#home">الصفحه الرئيسيه</a></li>
+        <li><a href="#soar">القران الكريم</a></li>
+        <li><a href="#quaran">القران الكريم صوت</a></li>
+        <li><a href="#Tafser">التفسير</a></li>
+      </ul>
+      <div class="logo">الموعظه</div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="headers">
+      <h2>مرحبا بكم <br />في موقع الموعظه الاسلامي</h2>
+      <a href="#soar">
+        <i class="fas fa-caret-left"></i><span>ابدا بالتصفح</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="soar">
+    <h2>القران الكريم</h2>
+    <div class="soarContainer"></div>
+    <div class="popup">
+      <div class="close">
+        <i class="fas fa-times" id="closeIcon"></i>
+        <i id="play" class="fas fa-play"></i>
+        <i id="pause" class="fas fa-pause"></i>
+      </div>
+      <div class="ayat">
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="main-banner change-name" id="quaran">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h6>وننزل من القران ماهو شفاء ورحمة للمؤمنين</h6>
+            <h2>القران الكريم</h2>
+            <div class="white-button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="chooseSurah" class="form-label">اختر السوره</label>
+                  <select name="Plan" class="form-select" aria-label="Default select example" id="chooseSurah"></select>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="chooseMoshaf" class="form-label">اختر روايه</label>
+                  <select name="Price" class="form-select" aria-label="Default select example"
+                    id="chooseMoshaf"></select>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="chooseReciter" class="form-label">اختر قارئ</label>
+                  <select name="Category" class="form-select" aria-label="Default select example"
+                    id="chooseReciter"></select>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <audio id="audioPalyer" controls autoplay muted style="width: 100%">
+                  <source src="" />
+                </audio>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="Tafser">
+    <div class="search-form" style="width: 100%">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="search-form" name="gs" method="submit" role="search" action="#">
+              <h2 class="text-center mb-5">تفسير القران</h2>
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="chooseSorahTafser" class="form-label float-end">اختر السوره</label>
+                    <select name="Price" class="form-select" aria-label="Default select example"
+                      id="chooseSorahTafser"></select>
+                  </fieldset>
+                </div>
+
+                <div class="audioContainer col-lg-12"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/hjvv.js"></script>
+</body>
+
+</html>
